@@ -20,7 +20,7 @@ export type VolumeSummary = {
   slug: string;
   title: string;
   volumeNumber: number;
-  status: "complete" | "upcoming";
+  status: "complete" | "upcoming" | "draft";
   file: string;
 };
 

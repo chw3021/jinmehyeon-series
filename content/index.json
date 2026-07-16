@@ -9,6 +9,13 @@
       "volumeNumber": 1,
       "status": "complete",
       "file": "volume-1.json"
+    },
+    {
+      "id": "2",
+      "slug": "frequency",
+      "title": "진메현 프리퀀시",
+      "volumeNumber": 2,
+      "status": "draft",
     }
   ]
 }

@@ -1,9 +1,11 @@
 import seriesIndex from "../../content/index.json";
 import volume1 from "../../content/volume-1.json";
+import volume2 from "../../content/volume-2.json";
 import type { SeriesIndex, Volume } from "./types";
 
 const volumesBySlug: Record<string, Volume> = {
   rising: volume1 as Volume,
+  frequency: volume2 as Volume,
 };
 
 export function getSeriesIndex(): SeriesIndex {

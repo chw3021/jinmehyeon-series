@@ -37,7 +37,14 @@ export default function HomePage() {
             const detail = getVolumeBySlug(volume.slug);
             return (
               <article key={volume.slug} className="volume-card">
-                <span className="eyebrow">{volume.volumeNumber}편 · {volume.status === "complete" ? "완결" : "연재 예정"}</span>
+                <span className="eyebrow">
+                  {volume.volumeNumber}편 ·{" "}
+                  {volume.status === "complete"
+                    ? "완결"
+                    : volume.status === "draft"
+                      ? "초안"
+                      : "연재 예정"}
+                </span>
                 <h3>{volume.title}</h3>
                 <p>{detail?.synopsis ?? "곧 공개됩니다."}</p>
                 <div className="hero-actions">
