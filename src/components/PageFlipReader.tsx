@@ -186,7 +186,12 @@ export default function PageFlipReader({ volume, chapter }: Props) {
       </main>
 
       <footer className="reader-controls">
-        <button type="button" onClick={goPrev} disabled={pageIndex === 0 && !prevChapter}>
+        <button
+          type="button"
+          className="page-nav prev"
+          onClick={goPrev}
+          disabled={pageIndex === 0 && !prevChapter}
+        >
           이전
         </button>
         <div className="page-dots" aria-hidden>
@@ -205,6 +210,7 @@ export default function PageFlipReader({ volume, chapter }: Props) {
         </div>
         <button
           type="button"
+          className="page-nav next"
           onClick={goNext}
           disabled={pageIndex >= pages.length - 1 && !nextChapter}
         >

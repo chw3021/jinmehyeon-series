@@ -136,7 +136,6 @@ button {
 .btn-primary:hover,
 .btn-ghost:hover,
 .nav-toggle:hover,
-.reader-controls button:hover:not(:disabled),
 .chapter-btn:hover,
 .volume-chip:hover {
   transform: translateY(-1px);
@@ -325,12 +324,40 @@ button {
 .reader-controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.75rem;
   padding: 0.85rem 1rem 1.2rem;
 }
 
-.reader-controls button:disabled {
+.page-nav {
+  position: fixed;
+  top: 50%;
+  z-index: 25;
+  transform: translateY(-50%);
+  border: 1px solid var(--line);
+  background: rgba(20, 12, 13, 0.72);
+  color: var(--paper);
+  border-radius: 999px;
+  padding: 0.85rem 1.15rem;
+  backdrop-filter: blur(8px);
+  transition: background 180ms ease, border-color 180ms ease, opacity 180ms ease;
+}
+
+.page-nav.prev {
+  left: max(0.75rem, env(safe-area-inset-left));
+}
+
+.page-nav.next {
+  right: max(0.75rem, env(safe-area-inset-right));
+}
+
+.page-nav:hover:not(:disabled) {
+  border-color: rgba(243, 230, 216, 0.35);
+  background: rgba(180, 35, 46, 0.55);
+}
+
+.reader-controls button:disabled,
+.page-nav:disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
