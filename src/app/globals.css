@@ -96,7 +96,7 @@ button {
   letter-spacing: -0.04em;
   color: var(--paper);
   text-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
-  max-width: 10ch;
+  max-width: 20ch;
 }
 
 .hero-copy {
