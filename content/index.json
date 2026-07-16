@@ -1,0 +1,14 @@
+{
+  "seriesTitle": "진메현 시리즈",
+  "seriesTagline": "약함 속에서 눈을 뜬 붉은 인격",
+  "volumes": [
+    {
+      "id": "1",
+      "slug": "rising",
+      "title": "진메현 라이징",
+      "volumeNumber": 1,
+      "status": "complete",
+      "file": "volume-1.json"
+    }
+  ]
+}
