@@ -91,7 +91,7 @@ button {
 
 .brand {
   font-family: var(--font-display), sans-serif;
-  font-size: clamp(3.4rem, 10vw, 6.4rem);
+  font-size: clamp(2.72rem, 8vw, 5.12rem);
   line-height: 0.92;
   letter-spacing: -0.04em;
   color: var(--paper);
