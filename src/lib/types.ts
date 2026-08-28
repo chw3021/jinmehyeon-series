@@ -29,3 +29,18 @@ export type SeriesIndex = {
   seriesTagline: string;
   volumes: VolumeSummary[];
 };
+
+export type Character = {
+  slug: string;
+  name: string;
+  codename: string;
+  role: string;
+  image: string;
+  description: string;
+};
+
+export type CharacterIndex = {
+  title: string;
+  subtitle: string;
+  characters: Character[];
+};

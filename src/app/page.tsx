@@ -27,6 +27,9 @@ export default function HomePage() {
           <Link className="btn-ghost" href="#volumes">
             편 목록 보기
           </Link>
+          <Link className="btn-ghost" href="/characters/">
+            등장인물
+          </Link>
         </div>
       </section>
 

@@ -186,6 +186,76 @@ button {
   line-height: 1.65;
 }
 
+.character-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.character-card {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(180, 35, 46, 0.12), transparent 42%),
+    rgba(20, 12, 13, 0.72);
+  overflow: hidden;
+}
+
+.character-photo-wrap {
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.character-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.character-body {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.character-body .eyebrow {
+  color: var(--ember);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.character-body h2 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.9rem;
+}
+
+.character-codename {
+  margin: 0;
+  color: var(--paper-dim);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.character-description {
+  margin: 0;
+  color: var(--ash);
+  line-height: 1.75;
+}
+
+@media (min-width: 760px) {
+  .character-card {
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    align-items: start;
+    padding: 1.4rem;
+  }
+}
+
 .chapter-grid {
   display: grid;
   gap: 0.75rem;
