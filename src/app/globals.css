@@ -327,9 +327,13 @@ button {
   width: min(720px, 100%);
   min-height: min(72vh, 760px);
   padding: 2rem 1.6rem 1.4rem;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 18%),
-    linear-gradient(145deg, #f7ebdf, #e8d4bf 58%, #dfc7ad);
+  background-color: #efe4d4;
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 22%),
+    url("../assets/hanji-paper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
   color: #2a1714;
   border-radius: 1.1rem;
   box-shadow:
